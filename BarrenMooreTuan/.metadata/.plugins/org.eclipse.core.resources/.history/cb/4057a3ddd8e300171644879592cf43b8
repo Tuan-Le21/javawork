@@ -1,0 +1,47 @@
+
+public class Player extends Main {
+		static int playerX = 0;
+		static int playerY = 0;
+
+	public int playerPosition(int n, int y) {
+		return y;	
+	}
+	public static void event(String playerInput) {
+		if (playerInput.equalsIgnoreCase("North")) {
+			movePlayerNorth();
+
+			if (playerInput.equalsIgnoreCase("South")) {
+				movePlayerSouth();
+			}
+
+			if (playerInput.equalsIgnoreCase("East")) {
+				movePlayerEast();
+			}
+
+			if (playerInput.equalsIgnoreCase("West")) {
+				movePlayerWest();
+			}
+		}
+	}
+
+	private static void movePlayerNorth() {
+		
+		if (playerY < 5 == true) {
+			
+			playerY += 1;
+		}
+	}
+
+	private static void movePlayerSouth() {
+
+	}
+
+	private static void movePlayerEast() {
+
+	}
+
+	private static void movePlayerWest() {
+
+	}
+
+}

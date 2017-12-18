@@ -1,0 +1,50 @@
+
+public class Player  {
+		 int playerX ;
+		 int playerY;
+		
+
+	public Player(int playerX, int playerY) {
+			super();
+			this.playerX = playerX;
+			this.playerY = playerY;
+		}
+	public int getPlayerX() {
+		return playerX;
+	}
+	public void setPlayerX(int playerX) {
+		this.playerX = playerX;
+	}
+	public int getPlayerY() {
+		return playerY;
+	}
+	public void setPlayerY(int playerY) {
+		this.playerY = playerY;
+	}
+	
+	public static void event(String playerInput) {
+		
+		}
+
+//	private static void movePlayerNorth() {
+//		
+////		if (playerY < 5 == true) {
+////			
+////			playerY+= 1;
+////		}else {
+////			System.out.println("Cannot go further North");
+//	}
+//
+//	private static void movePlayerSouth() {
+//
+//	}
+//
+//	private static void movePlayerEast() {
+//
+//	}
+//
+//	private static void movePlayerWest() {
+//
+//	}
+
+}

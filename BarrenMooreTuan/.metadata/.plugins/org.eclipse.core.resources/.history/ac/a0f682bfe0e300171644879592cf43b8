@@ -1,0 +1,45 @@
+
+
+public class Map  {
+
+	static int temp = 0;
+	static int boardX = 5;
+	static int boardY = 5;
+
+	static int[][] twoDim = new int[boardX][boardY];
+	Player player1 = new Player (0, 0);
+
+	public void drawMap() {
+
+//		for (int i = 0; i < 5; i++) {
+//			for (int j = 0; j < 5; j++)
+//				twoDim[i][j] = temp;
+//			temp += 0;
+//
+		
+//		}
+//		for (int i = 0; i < 5; i++) {
+//			for (int j = 0; j < 5; j++) {
+//
+//				System.out.print(twoDim[i][j]);
+//				System.out.print(" ");
+//			}
+//			System.out.println();
+
+		for (int i = boardX; i <5; i++){
+			for (int j = boardY; j <5; j++) {
+				twoDim[i][j] = twoDim[boardX][boardY];
+				temp+=10;
+				System.out.println(player1);
+			}
+			
+		}
+		}
+		
+
+	public void PlayerInitialPosition(int playerX,int  playerY, int p1) {
+		
+		
+		
+	}
+}

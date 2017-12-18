@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+Map m = new Map();
+
+	public static void main(String[] args) {
+		 
+		 
+		 Player p1 = new Player(2,2);
+	}
+	
+
+
+	public static void playerMovement() {
+		@SuppressWarnings("resource")
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter direction");
+		event(scan.nextLine());
+
+	}
+	private static void event(String nextLine) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+}
