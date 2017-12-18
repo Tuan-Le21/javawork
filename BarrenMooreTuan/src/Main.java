@@ -2,88 +2,40 @@ import java.util.Scanner;
 
 public class Main {
 
-	static int boardX = 5;
-	static int boardY = 5;
-	static int playerX = 0;
-	static int playerY = 0;
 
-	static int[][] twoDim = new int[boardX][boardY];
-	static int temp = 0;
 
 	public static void main(String[] args) {
 
-		// Player p = new Player();
+	Player player = new Player( 2, 2);
+	Map map = new Map();
+	boolean closeGame = false;
+	
+	map.refreshMap(player);
+	@SuppressWarnings("resource")
+	Scanner scan = new Scanner(System.in);
 
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++)
-				twoDim[i][j] = temp;
-			temp += 0;
-
-		}
-		playerPosition();
-		movePlayerNorth();
-		movePlayerSouth();
-		movePlayerEast();
-		movePlayerWest();
-		for (int i = 0; i < 5; i++) {
-			for (int j = 0; j < 5; j++) {
-
-				System.out.print(twoDim[i][j]);
-				System.out.print(" ");
-			}
-			System.out.println();
-		}
+while (closeGame ==false) {
+	System.out.println("Enter Direction");
+	String strInput = scan.nextLine();
+	if (strInput.equals("QUIT")) {
+		closeGame=true;
+		
+	} else {
+		player.event(strInput);
+		map.refreshMap(player);
+		
+		
 	}
-
-	public static void playerPosition() {
-		// Player's initial position
-		playerX = 2;
-		playerY = 2;
-		twoDim[playerX][playerY] = 1;
-
-	}
-
-	public static void playerMovement() {
-		@SuppressWarnings("resource")
-		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter direction");
-		event(scan.nextLine());
+}
+//	public static void playerMovement() {
+//		@SuppressWarnings("resource")
+//		Scanner scan = new Scanner(System.in);
+//		System.out.println("Enter direction");
+//		event(scan.nextLine());
 
 	}
 
-	public static void event(String playerInput) {
-		if (playerInput.equalsIgnoreCase("North")) {
-			movePlayerNorth();
-
-			if (playerInput.equalsIgnoreCase("South")) {
-				movePlayerSouth();
-			}
-
-			if (playerInput.equalsIgnoreCase("East")) {
-				movePlayerEast();
-			}
-
-			if (playerInput.equalsIgnoreCase("West")) {
-				movePlayerWest();
-			}
-		}
-	}
-
-	private static void movePlayerNorth() {
-		twoDim[playerX][playerY] ;
-
-	}
-
-	private static void movePlayerSouth() {
-
-	}
-
-	private static void movePlayerEast() {
-
-	}
-
-	private static void movePlayerWest() {
-
-	}
+	
 
 }
+
