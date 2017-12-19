@@ -1,5 +1,5 @@
 
-public class Logic extends Main {
+public class Logic  {
 
 	public int movement(int n, int s, int w, int e) {
 
