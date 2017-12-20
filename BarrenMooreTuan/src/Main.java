@@ -11,6 +11,7 @@ public class Main {
 	boolean closeGame = false;
 	
 	map.refreshMap(player);
+	
 	@SuppressWarnings("resource")
 	Scanner scan = new Scanner(System.in);
 

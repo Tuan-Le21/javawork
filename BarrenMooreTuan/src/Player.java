@@ -39,7 +39,7 @@ public class Player  {
 
 		private  void movePlayerNorth() {
 			if (x >0 == true){
-				x+=1;
+				x += -1;
 			} else {
 				System.out.println("Cannot go anymore");
 			}
@@ -48,7 +48,7 @@ public class Player  {
 
 		private  void movePlayerSouth() {
 			if (x < 4 == true){
-				x+=1;
+				x += 1;
 			} else {
 				System.out.println("Cannot go anymore");
 			}
@@ -56,7 +56,7 @@ public class Player  {
 
 		private  void movePlayerEast() {
 			if (y < 4 == true){
-				y+=1;
+				y+= -1;
 			} else {
 				System.out.println("Cannot go anymore");
 			}

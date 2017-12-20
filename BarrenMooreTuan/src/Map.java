@@ -21,8 +21,8 @@ public class Map {
 				twoDim[i][j] =0;
 			}
 			twoDim[player.getX()][player.getY()] = 1;
-			drawMap();
+			
 	}
-	
+		drawMap();
 	}
 }
