@@ -1,13 +1,24 @@
 
 public class Main {
-	
+
+	static String[][] twoDim = new String[8][8];
+
 	public static void main(String[] args) {
 		Map m = new Map();
-		Ships ship = new Ships(2);
+		m.drawMap(twoDim);
+		Ships.createShip(twoDim, 4);
+		event.userFire(twoDim, 15, 0);
+		Ships.createShip(twoDim, 3);
 		
-		m.drawMap();
-		m.showMap(ship);
-		
-	
-}
+		int torps = 99;
+		int hits = 0;
+
+		while (torps > 0 && hits < 7) {
+			m.showMap(twoDim);
+			hits = event.userFire(twoDim, hits, torps);
+			torps--;
+		}
+		finall.Final(hits, torps);
+	}
+
 }

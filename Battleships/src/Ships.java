@@ -1,36 +1,30 @@
 
-public class Ships {
-
-	int size;
-	
-	
-
-	public int getSize() {
-		return size;
-	}
+public class Ships  {
 
 
-	public void setSize(int size) {
-		this.size = size;
-	}
 
+	public static void createShip(String[][] drawMap,int size)
+    {
+       if(Math.random() < 0.5)
+       {
+          int col = (int)(Math.random()*5);
+          int row = (int)(Math.random()*7);
+          for(int i = 0; i<size; i++)
+          {
+             drawMap[row][col+i] = "~";
+          }
+       }
+       else
+       {
+          int col = (int)(Math.random()*7);
+          int row = (int)(Math.random()*5);
+          for(int i = 0; i<size; i++)
+          {
+             drawMap[row+i][col] = "~";
+          }
+       }
+    }
 
-	public Ships(int size) {
-		super();
-		this.size = size;
-	} 
-
-
-	public int patrolBoats() {
-		return size = 2;  
-		if (size = map.twoDim
-		
-		
-	}
-	public void battleShips() {
-		size = 3;
-		
-	}
 
 	
 }
